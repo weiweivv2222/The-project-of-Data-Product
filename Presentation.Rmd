@@ -1,0 +1,67 @@
+---
+title       : Exploratory Data Analysis 
+subtitle    : mtcars
+author      : Weiwei
+job         : Data Science
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Goals:
+1. Correclation matrix among selected variables
+2. Boxplot of selected variables
+3. Summary table of selected variables
+
+--- 
+
+## The description of mtcars and summary table
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+```{r echo=FALSE}
+library(ggplot2)
+library(corrplot)
+library(reshape2)
+library(clusterSim)
+data(mtcars)
+data <- mtcars
+matrix <- data.frame(data$disp, data$mpg,data$cyl,data$hp)
+```
+
+```{r}
+summary(matrix)
+```
+
+---
+
+## The correlaction matrix
+
+
+
+```{r}
+corr_matrix <- cor(matrix)
+corrplot.mixed(corr_matrix, order="AOE", upper="circle",tl.pos="lt",tl.col="black", tl.cex=1, tl.srt=0, diag = "u" )
+
+```
+
+
+---
+
+## The boxplot
+```{r echo=FALSE}
+dat <-data.Normalization(matrix,type="n1",normalization="column");dat <- melt(dat)
+ggplot(dat, aes(x=variable, y=value,fill=variable))+geom_boxplot()
+```
+
+---
+
+
+
+
+
+
+
+
