@@ -1,5 +1,4 @@
-# The-project-of-Data-Product
-Developing Data Products - Peer Assesment Projects
+# Developing Data Products - Peer Assesment Projects
 ======================
 
 ### Shiny Application
