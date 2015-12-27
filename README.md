@@ -3,7 +3,8 @@
 
 ### Shiny Application
 
-You can access my app here: 
+You can access my app here: https://weiweivv2222.shinyapps.io/Project 
+
 
 Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
 Deploy the application on Rstudio's shiny server
@@ -20,7 +21,7 @@ The Shiny application in question is entirely up to you. However, if you're havi
 
 ### Reproducible Pitch Presentation
 
-**BMIPitch Repository** 
+
 
 OK, you've made your shiny app, now it's time to make your pitch. You get 5 slides (inclusive of the title slide)  to pitch a your app. You're going to create a web page using Slidify with an html5 slide deck.
 
@@ -38,5 +39,3 @@ It must contained some embedded R code that gets run when slidifying the documen
 
 Notice to publish your slidify presentation to github, there's the publish command. This link outlines how to do it (it's one line). 
 
-http://slidify.org/publish.html
-You can also do it manually, though your github branch must have a .nojekyll fle and be on a branch names gh-pages. There's more on gh-pages here https://pages.github.com/ though remember the slidify publish command takes care of this for you if you'd like.
