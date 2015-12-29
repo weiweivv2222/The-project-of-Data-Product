@@ -25,7 +25,7 @@ The Shiny application in question is entirely up to you. However, if you're havi
 
 OK, you've made your shiny app, now it's time to make your pitch. You get 5 slides (inclusive of the title slide)  to pitch a your app. You're going to create a web page using Slidify with an html5 slide deck.
 
-Here's what you need
+Here's what you need http://rpubs.com/marytaftmcphee/137202
 
 5 slides to pitch our idea done in Slidify
 Your presentation pushed to github
